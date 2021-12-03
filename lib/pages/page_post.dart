@@ -14,15 +14,8 @@ class PostPage extends StatelessWidget {
               ImageWrapper(
                 image: "assets/images/mugs_side_bw_w1080.jpg",
               ),
-              Align(
-                alignment: Alignment.centerLeft,
-                child: Container(
-                  margin: marginBottom12,
-                  child: Text(
-                    "A BETTER BLOG FOR WRITING",
-                    style: headlineTextStyle,
-                  ),
-                ),
+              TextHeadline(
+                text: "A BETTER BLOG FOR WRITING",
               ),
               Align(
                 alignment: Alignment.centerLeft,
@@ -45,12 +38,10 @@ class PostPage extends StatelessWidget {
                 child:
                     TextHeadlineSecondary(text: "Secondary Headline Example"),
               ),
-              Align(
-                alignment: Alignment.centerLeft,
-                child: TextBody(
-                    text:
-                        "Nullam lobortis faucibus cursus. Sed aliquam semper mi sit amet interdum. Aliquam felis quam, ultrices ut elementum a, porta vel ex. Pellentesque at tempus magna. Vestibulum viverra lectus quis laoreet ullamcorper. Nunc finibus orci in luctus hendrerit. Ut dui mi, lacinia hendrerit elit ut, malesuada luctus enim."),
-              ),
+              TextBody(
+                  text:
+                      "Nullam lobortis faucibus cursus. Sed aliquam semper mi sit amet interdum. Aliquam felis quam, ultrices ut elementum a, porta vel ex. Pellentesque at tempus magna. Vestibulum viverra lectus quis laoreet ullamcorper. Nunc finibus orci in luctus hendrerit. Ut dui mi, lacinia hendrerit elit ut, malesuada luctus enim."),
+
               TextBlockquote(
                   text:
                       "Arcu ac tortor dignissim convallis aenean et tortor. Neque vitae tempus quam pellentesque nec nam aliquam. Dictum varius duis at consectetur lorem donec massa sapien faucibus. Etiam tempor orci eu lobortis elementum nibh tellus molestie nunc. Ac odio tempor orci dapibus ultrices in iaculis nunc sed."),

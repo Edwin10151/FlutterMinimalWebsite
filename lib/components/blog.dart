@@ -4,7 +4,6 @@ import 'package:google_fonts/google_fonts.dart';
 import 'package:minimal/components/color.dart';
 import 'package:minimal/components/spacing.dart';
 import 'package:minimal/components/text.dart';
-import 'package:minimal/components/typography.dart';
 import 'package:minimal/routes.dart';
 
 class ImageWrapper extends StatelessWidget {
@@ -321,7 +320,7 @@ class MenuBar extends StatelessWidget {
               GestureDetector(
                 onTap: () => Navigator.popUntil(
                     context, ModalRoute.withName(Navigator.defaultRouteName)),
-                child: Text("MINIMAL",
+                child: Text("ET",
                     style: GoogleFonts.montserrat(
                         color: textPrimary,
                         fontSize: 30,
@@ -333,57 +332,40 @@ class MenuBar extends StatelessWidget {
                   alignment: Alignment.centerRight,
                   child: Wrap(
                     children: <Widget>[
-                      FlatButton(
+                      TextButton(
                         onPressed: () => Navigator.popUntil(context,
                             ModalRoute.withName(Navigator.defaultRouteName)),
                         child: Text(
                           "HOME",
                           style: buttonTextStyle,
                         ),
-                        splashColor: Colors.transparent,
-                        hoverColor: Colors.transparent,
-                        highlightColor: Colors.transparent,
+                        style: ButtonStyle(overlayColor: MaterialStateProperty.all(Colors.transparent)),
                       ),
-                      FlatButton(
+                      TextButton(
                         onPressed: () {},
                         child: Text(
                           "PORTFOLIO",
                           style: buttonTextStyle,
                         ),
-                        splashColor: Colors.transparent,
-                        hoverColor: Colors.transparent,
-                        highlightColor: Colors.transparent,
+                        style: ButtonStyle(overlayColor: MaterialStateProperty.all(Colors.transparent)),
                       ),
-                      FlatButton(
+                      TextButton(
                         onPressed: () =>
                             Navigator.pushNamed(context, Routes.style),
                         child: Text(
                           "STYLE",
                           style: buttonTextStyle,
                         ),
-                        splashColor: Colors.transparent,
-                        hoverColor: Colors.transparent,
-                        highlightColor: Colors.transparent,
+
                       ),
-                      FlatButton(
+                      TextButton(
                         onPressed: () {},
                         child: Text(
                           "ABOUT",
                           style: buttonTextStyle,
                         ),
-                        splashColor: Colors.transparent,
-                        hoverColor: Colors.transparent,
-                        highlightColor: Colors.transparent,
-                      ),
-                      FlatButton(
-                        onPressed: () {},
-                        child: Text(
-                          "CONTACT",
-                          style: buttonTextStyle,
-                        ),
-                        splashColor: Colors.transparent,
-                        hoverColor: Colors.transparent,
-                        highlightColor: Colors.transparent,
+                        style: ButtonStyle(overlayColor: MaterialStateProperty.all(Colors.transparent)),
+
                       ),
                     ],
                   ),
